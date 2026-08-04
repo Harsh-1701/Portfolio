@@ -21,8 +21,3 @@ The portfolio showcases:
 - Framer Motion
 - Vercel
 
-## Running locally
-
-```bash
-npm install
-npm run dev
