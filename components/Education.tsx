@@ -2,12 +2,12 @@ import SectionLabel from "./SectionLabel";
 
 const education = [
   {
-    institute: "Sir M. Visvesvaraya Institute of Technology",
-    degree: "B.E. Electronics & Communication Engineering",
+    institute: "Sir M. Visvesvaraya Institute of Technology (VTU)",
+    degree: "B.E. in Electronics & Communication Engineering",
     period: "2023 – 2027",
-    score: "CGPA 8.35 / 10",
+    score: "CGPA: 8.35 / 10",
     description:
-      "Focused on Computer Networks, Embedded Systems, Communication Engineering, Software Development, and Artificial Intelligence through academic coursework and personal projects.",
+      "Focused on computer networks, embedded systems, communication engineering, software development, and artificial intelligence through academic and personal projects.",
   },
   {
     institute: "Jyoti Niketan School, Azamgarh",
@@ -23,7 +23,7 @@ const education = [
     period: "2020",
     score: "89.80%",
     description:
-      "Built a strong academic foundation in Mathematics, Science and Computer Applications.",
+      "Built a strong academic foundation with emphasis on mathematics, science and computer applications.",
   },
 ];
 
@@ -31,7 +31,7 @@ export default function Education() {
   return (
     <section
       id="education"
-      className="border-t border-line px-6 py-28"
+      className="border-t border-line px-6 py-32"
     >
       <div className="mx-auto max-w-7xl grid gap-10 md:grid-cols-12">
         <div className="md:col-span-4">
@@ -41,15 +41,13 @@ export default function Education() {
           />
         </div>
 
-        <div className="md:col-span-8">
-
+        <div className="md:col-span-8 space-y-8">
           {education.map((item) => (
             <div
-              key={item.institute}
-              className="border-b border-line py-10 last:border-none"
+              key={item.institute + item.degree}
+              className="rounded-2xl border border-line bg-surface p-6 transition duration-300 hover:border-accent"
             >
-              <div className="flex flex-col md:flex-row md:justify-between">
-
+              <div className="flex flex-col justify-between gap-2 md:flex-row md:items-center">
                 <div>
                   <h3 className="text-2xl font-semibold">
                     {item.institute}
@@ -60,25 +58,22 @@ export default function Education() {
                   </p>
                 </div>
 
-                <div className="mt-3 text-left md:mt-0 md:text-right">
+                <div className="text-right">
                   <p className="font-mono text-sm text-muted">
                     {item.period}
                   </p>
 
-                  <p className="mt-1 font-medium">
+                  <p className="mt-1 font-semibold">
                     {item.score}
                   </p>
                 </div>
-
               </div>
 
-              <p className="mt-6 max-w-3xl leading-relaxed text-muted">
+              <p className="mt-5 leading-relaxed text-muted">
                 {item.description}
               </p>
-
             </div>
           ))}
-
         </div>
       </div>
     </section>

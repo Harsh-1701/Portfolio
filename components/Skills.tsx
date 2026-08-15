@@ -2,44 +2,94 @@ import SectionLabel from "./SectionLabel";
 
 const groups = [
   {
-    label: "Software",
-    items: ["Next.js", "Node.js", "Tailwind CSS", "Supabase", "MongoDB", "Java", "C++", "Python"],
+    label: "Programming & Software",
+    items: [
+      "Java",
+      "C++",
+      "C",
+      "JavaScript",
+      "React",
+      "Next.js",
+      "Node.js",
+    ],
   },
   {
-    label: "Systems & Networks",
-    items: ["Computer Networks", "Network Security", "Network Troubleshooting", "Telecom Fundamentals", "Cybersecurity"],
+    label: "AI & Computer Vision",
+    items: [
+      "PyTorch",
+      "Computer Vision",
+      "EfficientNet-B0",
+      "Grad-CAM",
+      "OpenCV",
+      "Streamlit",
+    ],
   },
   {
-    label: "Engineering Foundation",
-    items: ["Digital & Analog Communication", "Embedded Systems", "VLSI Fundamentals", "Verilog", "MATLAB"],
+    label: "Networks & Cybersecurity",
+    items: [
+      "Computer Networks",
+      "Network Security",
+      "Network Troubleshooting",
+      "Telecom Fundamentals",
+      "Cybersecurity",
+    ],
   },
   {
-    label: "Tooling",
-    items: ["Git", "GitHub", "Linux", "Vercel", "Proteus", "Arduino IDE", "Figma"],
+    label: "ECE & Embedded Systems",
+    items: [
+      "Embedded Systems",
+      "Digital Communication",
+      "Analog Communication",
+      "VLSI Fundamentals",
+      "Verilog",
+      "MATLAB",
+    ],
+  },
+  {
+    label: "Tools & Platforms",
+    items: [
+      "Git",
+      "GitHub",
+      "Linux",
+      "Supabase",
+      "Tailwind CSS",
+      "Vercel",
+      "Arduino",
+      "Proteus",
+    ],
   },
 ];
 
 export default function Skills() {
   return (
-    <section className="px-6 py-32 border-t border-line">
-      <div className="mx-auto max-w-7xl grid md:grid-cols-12 gap-10">
+    <section id="skills" className="border-t border-line px-6 py-32">
+      <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-12">
         <div className="md:col-span-4">
-          <SectionLabel index="04" label="Toolkit" />
-          <p className="text-muted max-w-xs">
-            Grouped by domain, not ranked by fictional percentages.
+          <SectionLabel index="04" label="Skills" />
+
+          <p className="max-w-xs leading-relaxed text-muted">
+            A practical mix of software development, AI, networking,
+            cybersecurity, and electronics engineering.
           </p>
         </div>
+
         <div className="md:col-span-8 space-y-10">
-          {groups.map((g) => (
-            <div key={g.label}>
-              <div className="font-mono text-[11px] uppercase tracking-widest text-accent mb-4">
-                {g.label}
+          {groups.map((group) => (
+            <div key={group.label}>
+              <div className="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-accent">
+                {group.label}
               </div>
-              <div className="flex flex-wrap gap-x-6 gap-y-2 text-lg">
-                {g.items.map((i, idx) => (
-                  <span key={i} className="flex items-center gap-6">
-                    {i}
-                    {idx < g.items.length - 1 && <span className="text-line">·</span>}
+
+              <div className="flex flex-wrap gap-x-5 gap-y-3">
+                {group.items.map((item, index) => (
+                  <span
+                    key={item}
+                    className="text-lg text-text"
+                  >
+                    {item}
+                    {index < group.items.length - 1 && (
+                      <span className="ml-5 text-line">·</span>
+                    )}
                   </span>
                 ))}
               </div>

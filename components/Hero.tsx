@@ -27,19 +27,18 @@ export default function Hero() {
           <motion.h1
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: .8, delay: .1 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium leading-[0.95]"
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl font-medium tracking-tight leading-[0.95]"
           >
-            Software Engineer.
-            <br />
-
-            <span className="text-accent">
-              AI Builder.
+            <span className="whitespace-nowrap">
+              Software Engineer.
             </span>
-
             <br />
-
-            Problem Solver.
+            <span className="text-accent">AI Builder.</span>
+            <br />
+            <span className="whitespace-nowrap">
+              Problem Solver.
+            </span>
           </motion.h1>
 
           <motion.p
@@ -132,7 +131,7 @@ export default function Hero() {
               href="mailto:harsh.s1701@gmail.com"
               className="hover:text-accent transition"
             >
-              Email
+              Email ↗
             </a>
           </motion.div>
 
