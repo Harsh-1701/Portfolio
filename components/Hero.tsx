@@ -6,7 +6,7 @@ import SignalLine from "./SignalLine";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden px-6 pt-32 pb-16 min-h-screen flex items-center">
+    <section className="relative overflow-hidden px-5 sm:px-6 pt-28 sm:pt-32 pb-16 min-h-screen flex items-center">
 
       <div className="absolute inset-0 grid-overlay opacity-40 pointer-events-none" />
 
@@ -28,15 +28,15 @@ export default function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl font-medium tracking-tight leading-[0.95]"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-medium tracking-tight leading-[0.95]"
           >
-            <span className="whitespace-nowrap">
+            <span className="whitespace-normal lg:whitespace-nowrap">
               Software Engineer.
             </span>
             <br />
             <span className="text-accent">AI Builder.</span>
             <br />
-            <span className="whitespace-nowrap">
+            <span className="whitespace-normal lg:whitespace-nowrap">
               Problem Solver.
             </span>
           </motion.h1>
@@ -140,11 +140,10 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: .8, delay: .3 }}
-          className="flex justify-center mt-16 lg:mt-0"
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="mt-12 flex w-full justify-center lg:mt-0"
         >
-          <div className="relative">
-
+          <div className="relative w-full max-w-[360px]">
             <div className="absolute -inset-4 rounded-[32px] border border-accent/20" />
 
             <Image
@@ -153,9 +152,8 @@ export default function Hero() {
               width={360}
               height={450}
               priority
-              className="rounded-[28px] border border-line object-cover"
+              className="h-auto w-full rounded-[28px] border border-line object-cover"
             />
-
           </div>
         </motion.div>
 
