@@ -1,57 +1,84 @@
 import SectionLabel from "./SectionLabel";
 
-const jobs = [
+const education = [
   {
-    company: "Bharti Airtel",
-    role: "Network Intern",
-    period: "Apr 2026 — Jun 2026",
-    location: "Bengaluru, IN",
-    points: [
-      "Monitored and analyzed telecom network performance across live infrastructure.",
-      "Assisted with connectivity troubleshooting and exposure to NOC-style operations.",
-      "Gained ground-level understanding of how reliability is engineered at telecom scale.",
-    ],
+    institute: "Sir M. Visvesvaraya Institute of Technology",
+    degree: "B.E. Electronics & Communication Engineering",
+    period: "2023 – 2027",
+    score: "CGPA 8.35 / 10",
+    description:
+      "Focused on Computer Networks, Embedded Systems, Communication Engineering, Software Development, and Artificial Intelligence through academic coursework and personal projects.",
   },
   {
-    company: "Trinity Gaming",
-    role: "Recruitment & Screening Intern",
-    period: "Sep 2023 — Sep 2024",
-    location: "Bengaluru, IN",
-    points: [
-      "Identified and shortlisted gaming talent across India.",
-      "Acted as HR and community liaison during onboarding of new entrants.",
-    ],
+    institute: "Jyoti Niketan School, Azamgarh",
+    degree: "ISC (Class XII)",
+    period: "2022",
+    score: "90.25%",
+    description:
+      "Science stream with Physics, Chemistry, Mathematics and Computer Science.",
+  },
+  {
+    institute: "Jyoti Niketan School, Azamgarh",
+    degree: "ICSE (Class X)",
+    period: "2020",
+    score: "89.80%",
+    description:
+      "Built a strong academic foundation in Mathematics, Science and Computer Applications.",
   },
 ];
 
-export default function Experience() {
+export default function Education() {
   return (
-    <section id="experience" className="px-6 py-32 border-t border-line">
-      <div className="mx-auto max-w-7xl grid md:grid-cols-12 gap-10">
+    <section
+      id="education"
+      className="border-t border-line px-6 py-28"
+    >
+      <div className="mx-auto max-w-7xl grid gap-10 md:grid-cols-12">
         <div className="md:col-span-4">
-          <SectionLabel index="05" label="Experience" />
+          <SectionLabel
+            index="06"
+            label="Education"
+          />
         </div>
-        <div className="md:col-span-8 space-y-16">
-          {jobs.map((j) => (
-            <div key={j.company} className="grid md:grid-cols-6 gap-4">
-              <div className="md:col-span-2 font-mono text-xs text-muted">
-                <div>{j.period}</div>
-                <div className="mt-1">{j.location}</div>
+
+        <div className="md:col-span-8">
+
+          {education.map((item) => (
+            <div
+              key={item.institute}
+              className="border-b border-line py-10 last:border-none"
+            >
+              <div className="flex flex-col md:flex-row md:justify-between">
+
+                <div>
+                  <h3 className="text-2xl font-semibold">
+                    {item.institute}
+                  </h3>
+
+                  <p className="mt-2 text-accent">
+                    {item.degree}
+                  </p>
+                </div>
+
+                <div className="mt-3 text-left md:mt-0 md:text-right">
+                  <p className="font-mono text-sm text-muted">
+                    {item.period}
+                  </p>
+
+                  <p className="mt-1 font-medium">
+                    {item.score}
+                  </p>
+                </div>
+
               </div>
-              <div className="md:col-span-4">
-                <h3 className="text-2xl font-medium">{j.company}</h3>
-                <div className="text-accent font-mono text-xs uppercase tracking-widest mt-1">{j.role}</div>
-                <ul className="mt-5 space-y-3">
-                  {j.points.map((p) => (
-                    <li key={p} className="text-muted leading-relaxed flex gap-3">
-                      <span className="text-accent mt-2">—</span>
-                      <span>{p}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+
+              <p className="mt-6 max-w-3xl leading-relaxed text-muted">
+                {item.description}
+              </p>
+
             </div>
           ))}
+
         </div>
       </div>
     </section>

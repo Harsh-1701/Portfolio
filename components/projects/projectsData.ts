@@ -11,12 +11,27 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "EduNite",
+    description:
+      "An alumni-student mentorship platform connecting students with verified alumni through mentorship, internships, networking, and career guidance.",
+    image: "/projects/edunite.png",
+    github: "https://github.com/Harsh-1701/edunite",
+    demo: "https://edunite-ruddy.vercel.app",
+    featured: true,
+    technologies: [
+      "Next.js",
+      "Node.js",
+      "Supabase",
+      "Tailwind CSS",
+      "Vercel",
+    ],
+  },
+  {
     title: "AI-Based Skin Cancer Detection System",
     description:
       "AI-powered skin lesion classification using EfficientNet-B0 with Grad-CAM explainability and PDF diagnostic report generation.",
     image: "/projects/skin-cancer.png",
     github: "https://github.com/Harsh-1701/Skin-Cancer-Detection",
-    featured: true,
     status: "Research Paper in Progress",
     technologies: [
       "PyTorch",

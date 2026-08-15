@@ -10,14 +10,14 @@ export default function About() {
         <div className="md:col-span-8 space-y-6 text-lg leading-relaxed">
           <p>
             I'm in my final year of Electronics & Communication Engineering at
-            Sir M. Visvesvaraya Institute of Technology, Bengaluru — currently at{" "}
+            Sir M. Visvesvaraya Institute of Technology, Bengaluru, currently at{" "}
             <span className="text-accent font-mono text-base">8.4 CGPA</span>.
           </p>
           <p className="text-muted">
-            My degree is about how information moves — through signals, circuits,
+            My degree is about how information moves through signals, circuits,
             networks. Building software felt like a natural extension of that: another
             way information moves between people. So I started shipping products on my
-            own, learning the parts nobody teaches you in class — deployment,
+            own, learning the parts nobody teaches you in class like deployment,
             authentication, real-time systems, debugging things that only break in production.
           </p>
           <p className="text-muted">

@@ -50,7 +50,7 @@ export default function EduNite() {
               </div>
               <p className="text-muted leading-relaxed mb-10">
                 I built EduNite as a structured space where students and verified
-                alumni can actually talk — with mentorship flows, real-time chat,
+                alumni can actually talk, with mentorship flows, real-time chat,
                 and tools that help students prepare for those conversations.
               </p>
 
@@ -60,7 +60,7 @@ export default function EduNite() {
               <p className="text-muted leading-relaxed">
                 The dashboards were fine. The real challenge was making messaging
                 behave the way people <em className="text-text not-italic">expect</em>{" "}
-                messaging to behave — instant delivery, correct ordering, sensible
+                messaging to behave, i.e., instant delivery, correct ordering, sensible
                 state after reconnects. Getting real-time to feel invisible taught
                 me more about system design than any single course did.
               </p>

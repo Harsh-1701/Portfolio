@@ -2,7 +2,7 @@ import SectionLabel from "./SectionLabel";
 
 const items = [
   {
-    title: "President — Quillz, SMVIT Quiz Club",
+    title: "Joint Secretary — Quillz, SMVIT Quiz Club",
     period: "Oct 2025 — Present",
     desc: "Leading operations, event design, and team coordination. Organized LAUNCHPAD '25, which drew approximately 270 registrations.",
   },
@@ -10,6 +10,11 @@ const items = [
     title: "National Finalist — IIT Kharagpur Engineers' Day Quiz",
     period: "National level",
     desc: "Reached the finals of one of the most competitive engineering-quiz circuits in India.",
+  },
+  {
+    title: "Winner — National Engineers' Day Quiz",
+    period: "College level",
+    desc: "Won all the rounds of the quiz, including the final, at the college-level Engineers' Day Quiz hosted by SMVIT, Bengaluru.",
   },
   {
     title: "Debate Panelist — BITS Goa National Tournament",
@@ -28,7 +33,7 @@ export default function Leadership() {
     <section className="px-6 py-32 border-t border-line">
       <div className="mx-auto max-w-7xl grid md:grid-cols-12 gap-10">
         <div className="md:col-span-4">
-          <SectionLabel index="07" label="Leadership & Signals" />
+          <SectionLabel index="07" label="Leadership" />
         </div>
         <div className="md:col-span-8 space-y-8">
           {items.map((it) => (
