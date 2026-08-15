@@ -4,7 +4,7 @@ import { projects } from "./projects/projectsData";
 
 export default function Projects() {
   return (
-    <section className="border-t border-line px-6 py-32">
+    <section id="work" className="border-t border-line px-6 py-32">
       <div className="mx-auto max-w-7xl">
         <div className="mb-16 grid gap-10 md:grid-cols-12">
           <div className="md:col-span-4">

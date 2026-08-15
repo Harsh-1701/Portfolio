@@ -163,17 +163,12 @@ export default function Hero() {
       </div>
 
       <div className="absolute bottom-0 left-0 right-0">
-
         <SignalLine />
 
-        <div className="mx-auto flex max-w-7xl justify-center px-6 py-4">
-
-          <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-muted">
-            Scroll ↓
-          </span>
-
+        <div className="mx-auto max-w-7xl px-6 py-4 flex justify-between font-mono text-[10px] uppercase tracking-widest text-muted">
+          <span>SIG · 001</span>
+          <span>2026</span>
         </div>
-
       </div>
 
     </section>
