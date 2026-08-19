@@ -18,9 +18,9 @@ const jobs = [
     period: "Dec 2023 – Mar 2024",
     location: "Remote",
     points: [
-      "Worked with Linux, Wireshark, Nmap and basic Ethical Hacking.",
-      "Learned Network Security, Information Security and Vulnerability Assessment.",
-      "Explored Cryptography and Web Application Security fundamentals.",
+      "Explored ethical hacking, network security and information security fundamentals.",
+      "Worked with Linux, Wireshark and Nmap for security analysis and network reconnaissance.",
+      "Studied vulnerability assessment, cryptography and web application security fundamentals.",
     ],
   },
   {
