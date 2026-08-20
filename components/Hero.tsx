@@ -45,8 +45,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: .6, delay: .3 }}
-            className="mt-10 max-w-2xl text-lg leading-relaxed text-muted"
-          >
+            className="mt-10 max-w-2xl text-lg leading-relaxed text-muted">
             I'm <span className="text-text font-medium">Harsh Singh</span>,
             a final-year Electronics & Communication Engineering student at
             Sir M. Visvesvaraya Institute of Technology, Bengaluru.
